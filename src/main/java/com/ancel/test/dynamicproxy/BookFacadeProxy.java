@@ -24,6 +24,7 @@ public class BookFacadeProxy implements InvocationHandler{
      */  
     public Object invoke(Object proxy, Method method, Object[] args)  
             throws Throwable {  
+    	System.out.println(proxy.getClass().getCanonicalName());
         Object result=null;  
         if(method.getName().equals("addBook")){
         	 System.out.println("事物开始");  

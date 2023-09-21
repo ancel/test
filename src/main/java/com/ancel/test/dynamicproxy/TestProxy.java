@@ -3,7 +3,11 @@ package com.ancel.test.dynamicproxy;
 
 
   
-public class TestProxy {  
+public class TestProxy {
+	
+	static {
+		System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+	}
 	enum fangxiang{
 		west,east,north,south
 	}
